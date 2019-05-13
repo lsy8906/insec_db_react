@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+@import url(http://cdn.jsdelivr.net/font-kopub/1.0/kopubdotum.css);
+
+@font-face {
+    font-family:'Noto Sans';
+    font-style:normal;
+    font-weight:100;
+    src:local('Noto Sans Thin'), local('NotoSans-Thin'),
+    url(fonts/NotoSans/NotoSans-Thin.eot),
+    url(fonts/NotoSans/NotoSans-Thin.eot?#iefix) format('embedded-opentype'),
+    url(fonts/NotoSans/NotoSans-Thin.woff) format('woff'),
+    url(fonts/NotoSans/NotoSans-Thin.otf) format('opentype');
+}
+@font-face {
+    font-family:'Noto Sans';
+    font-style:normal;
+    font-weight:300;
+    src:local('Noto Sans Light'), local('Noto Sans Light'), local('Noto Sans Light');
+    src:url(fonts/NotoSans/NotoSans-Light.eot);
+    src:url(fonts/NotoSans/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+    url(fonts/NotoSans/NotoSans-Light.woff) format('woff'),
+    url(fonts/NotoSans/NotoSans-Light.otf) format('truetype');
+}
+@font-face {
+    font-family:'Noto Sans';
+    font-style:normal;
+    font-weight:350;
+    src:local('Noto Sans DemiLight'), local('NotoSans-DemiLight'),
+    url(fonts/NotoSans/NotoSans-DemiLight.eot),
+    url(fonts/NotoSans/NotoSans-DemiLight.eot?#iefix) format('embedded-opentype'),
+    url(fonts/NotoSans/NotoSans-DemiLight.woff) format('woff'),
+    url(fonts/NotoSans/NotoSans-DemiLight.otf) format('opentype');
+}
+@font-face {
+    font-family:'Noto Sans';
+    font-style:normal;
+    font-weight:400;
+    src:local('Noto Sans Regular'), local('Noto Sans Regular'), local('Noto Sans Regular');
+    src:url(fonts/NotoSans/NotoSans-Regular.eot);
+    src:url(fonts/NotoSans/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(fonts/NotoSans/NotoSans-Regular.woff) format('woff'),
+    url(fonts/NotoSans/NotoSans-Regular.otf) format('truetype');
+}
+@font-face {
+    font-family:'Noto Sans';
+    font-style:normal;
+    font-weight:500;
+    src:local('Noto Sans Medium'), local('Noto Sans Medium'), local('Noto Sans Medium');
+    src:url(fonts/NotoSans/NotoSans-Medium.eot);
+    src:url(fonts/NotoSans/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(fonts/NotoSans/NotoSans-Medium.woff) format('woff'),
+    url(fonts/NotoSans/NotoSans-Medium.otf) format('truetype');
+}
+@font-face {
+    font-family:'Noto Sans';
+    font-style:normal;
+    font-weight:700;
+    src:local('Noto Sans Bold'), local('Noto Sans Bold'), local('Noto Sans Bold');
+    src:url(fonts/NotoSans/NotoSans-Bold.eot);
+    src:url(fonts/NotoSans/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+    url(fonts/NotoSans/NotoSans-Bold.woff) format('woff'),
+    url(fonts/NotoSans/NotoSans-Bold.otf) format('truetype');
+}
+
+html {overflow-y: scroll;}
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, figure{margin: 0;padding: 0;}
+table {border-collapse : collapse;}
+body, input, textarea, select, button, table {font-family: 'Noto Sans','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;font-size: 14px;-webkit-text-size-adjust: none;}
+img, fieldset {border: 0 none;}
+img {vertical-align: top;}
+ul, ol, li {list-style: outside none none;}
+em, address {font-style: normal;}
+a {text-decoration: none;}
+/*a:hover, a:active, a:focus {text-decoration: underline;}*/
+hr {display: none;}
+.blind,legend{display:block;position:absolute;left:-9999em}
+
+.clearfix {*zoom:1;}
+.clearfix:after {clear: both;content: "";display: block;}
+.center {text-align: center !important;}
+.fl_right {float: right;}
+.fl_left {float: left;}
+.txt_right {text-align: right;}
+.txt_left {text-align: left;}
+
+/*--------------------------------------------------*/
+
+html,body {width: 100%;height: 100%;}
+
+#wrap {position: relative;min-width: 1200px;min-height: 100%;box-sizing: border-box;}
+.inner {margin: 0 auto;width: 1200px;*zoom: 1;}
+.inner::after {clear: both;content: '';display: block;}
+
+/*--------------------------------------------------*/
+
+#header {border-bottom: 1px solid #ddd;box-sizing: border-box;}
+#header .inner {position: relative;width: 1200px;height: 100%;}
+#header .inner .logo {float: left;padding-top: 20px;}
+#header .inner .gnb {float: right;margin-right: 100px;}
+#header .inner .gnb > li {float: left;line-height: 80px;overflow: hidden;}
+#header .inner .gnb li a {display: block;padding: 0 10px;height: 100%;color: #000;font-size: 19px;font-weight: 400;}
+#header .inner .gnb > li:hover > a,
+#header .inner .gnb > li > a.on {color: #2475d5;}
+#header .inner .login {position: absolute;right: 0;top: 30px;}
+#header .inner .login li {float: left;}
+#header .inner .login li a {padding: 5px 8px;color: #fff;font-size: 16px;background-color: #a6a8ab;}
+
+#content .inner {padding: 80px 0;}
+
+.schedule {width: 100%;border-bottom: 1px solid #dcdcdc;table-layout: fixed;}
+.schedule input {width: 85%;}
+.schedule tr th,
+.schedule tr td {padding: 15px 0;font-size: 15px;border: 1px solid #dcdcdc;}
+.schedule tr th {font-size: 19px;text-align: center;font-weight: 500;border-top: 2px solid #2475d5;}
+.schedule tr th {color: #2d2d2d;background-color: #f2f8ff;;border-bottom: 1px solid #dcdcdc;}
+.schedule tr th:last-child,
+.schedule tr td:last-child {border-right: none;}
+.schedule tr td {color: #2d2d2d;text-align: center;line-height: 1.8em;}
+.schedule tr.end td {text-decoration: line-through;}
+.schedule tr th img {padding-right: 7px;width: 20px;vertical-align: -4px;}
+.schedule tr td a {color: #2d2d2d;}
+.schedule tr td a:hover {text-decoration: underline;}
+
+
+.btn {display: inline-block;padding: 10px 20px;color: #fff;font-size: 20px;background-color: #2475d5;}
+.button	{text-align: center;}
+.button button,
+.button a {display: inline-block;margin-top: 30px;padding: 10px 40px;color: #fff;font-size: 20px;background-color: #2475d5;border: none;cursor: pointer;}
